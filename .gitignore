@@ -1,3 +1,7 @@
+# Organization files
+.idea
+codes/cmake-build-debug
+
 # Prerequisites
 *.d
 
