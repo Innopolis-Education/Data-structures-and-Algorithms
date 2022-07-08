@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+using namespace std;
 
+int main() {
     return 0;
 }
