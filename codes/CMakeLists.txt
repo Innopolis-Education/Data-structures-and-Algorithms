@@ -3,4 +3,4 @@ project(Data_structures_and_Algorithms)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Data_structures_and_Algorithms main.cpp)
+add_executable(Data_structures_and_Algorithms main.cpp data_structures/List/ArrayList.cpp)

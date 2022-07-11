@@ -5,12 +5,13 @@
 
 using namespace std;
 
-#define SIZE 10
-
 /// Implementation of insertion sort
-/// @param array simple array which is had to sort
-void insertion_sort(int* array) {
-    for (int i = 1; i < SIZE; i++) {
+/// @param array a simple array which is had to sort
+/// @param size a size of the array
+/// @time_complexity best case - O(n)\n average case - O(n^2)\n worst case - O(n^2)
+/// @space_complexity 1 (only 2 variables)
+void insertion_sort(int* array, int size) {
+    for (int i = 1; i < size; i++) {
         int key = array[i];
         int j = i-1;
 
@@ -23,9 +24,10 @@ void insertion_sort(int* array) {
 
 /// Simple example
 void example() {
-    int arr[SIZE] = {10, 7, 3, 2, 8, 6, 1, 4, 5, 9};
+    int arr[10] = {10, 7, 3, 2, 8, 6, 1, 4, 5, 9};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
-    insertion_sort(arr);
+    insertion_sort(arr, size);
 
     for (int x : arr) {
         cout << x << " ";
