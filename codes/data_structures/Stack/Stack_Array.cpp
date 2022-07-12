@@ -19,5 +19,6 @@ void example() {
     for (int i = 0; i < 5; i++)
         cout << stack.pop() << " ";
 
-    cout << "\n" << "Is empty: " << stack.isEmpty() << endl;
+    cout << "\n"
+         << "Is empty: " << stack.isEmpty() << endl;
 }

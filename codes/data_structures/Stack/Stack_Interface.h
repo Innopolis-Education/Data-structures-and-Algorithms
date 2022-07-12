@@ -3,7 +3,7 @@
 
 /// Interface of a stack
 /// \tparam E type of value, stored in the stack
-template <typename E>
+template<typename E>
 class StackInterface {
     /// Shows size of the stack
     /// \return number of elements in the stack
@@ -32,4 +32,4 @@ class StackInterface {
 };
 
 
-#endif //DATA_STRUCTURES_AND_ALGORITHMS_STACK_INTERFACE_H
+#endif//DATA_STRUCTURES_AND_ALGORITHMS_STACK_INTERFACE_H

@@ -1,14 +1,15 @@
 #ifndef DATA_STRUCTURES_AND_ALGORITHMS_STACK_ARRAY_H
 #define DATA_STRUCTURES_AND_ALGORITHMS_STACK_ARRAY_H
 
-#include <iostream>
 #include "Stack_Interface.h"
+#include <iostream>
 
-template <typename E>
+template<typename E>
 class StackArray : StackInterface<E> {
     int top_element = -1;
-    E* array;
+    E *array;
     int CAPACITY = 16;
+
 public:
     /// Default constructor
     StackArray() {
@@ -47,4 +48,4 @@ public:
 };
 
 
-#endif //DATA_STRUCTURES_AND_ALGORITHMS_STACK_ARRAY_H
+#endif//DATA_STRUCTURES_AND_ALGORITHMS_STACK_ARRAY_H
