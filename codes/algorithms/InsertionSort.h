@@ -30,7 +30,7 @@ void example() {
     insertion_sort(arr, size);
 
     for (int x : arr) {
-        cout << x << " ";
+        std::cout << x << " ";
     }
 }
 

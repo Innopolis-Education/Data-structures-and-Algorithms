@@ -1,24 +1,26 @@
+// Copyright 2022 Zener
+// Created by zener on 7/12/2022.
+//
+
 #include "Stack_Array.h"
 #include <iostream>
-
-using namespace std;
 
 void example() {
     StackArray<int> stack(5);
 
-    cout << "Is empty: " << stack.isEmpty() << endl;
+    std::cout << "Is empty: " << stack.isEmpty() << std::endl;
 
     for (int i = 1; i <= 5; i++)
         stack.push(i);
 
-    cout << "Is empty: " << stack.isEmpty() << endl;
+    std::cout << "Is empty: " << stack.isEmpty() << std::endl;
 
-    cout << "Top: " << stack.top() << endl;
+    std::cout << "Top: " << stack.top() << std::endl;
 
-    cout << "Pop: ";
+    std::cout << "Pop: ";
     for (int i = 0; i < 5; i++)
-        cout << stack.pop() << " ";
+        std::cout << stack.pop() << " ";
 
-    cout << "\n"
-         << "Is empty: " << stack.isEmpty() << endl;
+    std::cout << "\n"
+         << "Is empty: " << stack.isEmpty() << std::endl;
 }

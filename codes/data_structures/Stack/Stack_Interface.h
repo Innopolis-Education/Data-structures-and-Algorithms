@@ -1,5 +1,9 @@
-#ifndef DATA_STRUCTURES_AND_ALGORITHMS_STACK_INTERFACE_H
-#define DATA_STRUCTURES_AND_ALGORITHMS_STACK_INTERFACE_H
+// Copyright 2022 Zener
+// Created by zener on 7/12/2022.
+//
+
+#ifndef CODES_DATA_STRUCTURES_STACK_STACK_INTERFACE_H_
+#define CODES_DATA_STRUCTURES_STACK_STACK_INTERFACE_H_
 
 /// Interface of a stack
 /// \tparam E type of value, stored in the stack
@@ -32,4 +36,4 @@ class StackInterface {
 };
 
 
-#endif//DATA_STRUCTURES_AND_ALGORITHMS_STACK_INTERFACE_H
+#endif  // CODES_DATA_STRUCTURES_STACK_STACK_INTERFACE_H_

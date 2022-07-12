@@ -1,5 +1,9 @@
-#ifndef DATA_STRUCTURES_AND_ALGORITHMS_STACK_ARRAY_H
-#define DATA_STRUCTURES_AND_ALGORITHMS_STACK_ARRAY_H
+// Copyright 2022 Zener
+// Created by zener on 7/12/2022.
+//
+
+#ifndef CODES_DATA_STRUCTURES_STACK_STACK_ARRAY_H_
+#define CODES_DATA_STRUCTURES_STACK_STACK_ARRAY_H_
 
 #include "Stack_Interface.h"
 #include <iostream>
@@ -9,6 +13,7 @@ class StackArray : StackInterface<E> {
     int top_element = -1;
     E *array;
     int CAPACITY = 16;
+
 
 public:
     /// Default constructor
@@ -48,4 +53,4 @@ public:
 };
 
 
-#endif//DATA_STRUCTURES_AND_ALGORITHMS_STACK_ARRAY_H
+#endif  // CODES_DATA_STRUCTURES_STACK_STACK_ARRAY_H_
