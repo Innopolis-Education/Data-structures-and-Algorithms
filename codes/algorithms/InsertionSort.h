@@ -4,6 +4,7 @@
 #define CODES_ALGORITHMS_INSERTIONSORT_H_
 
 #include <iostream>
+#include <utility>
 
 /// Implementation of insertion sort
 /// @param array a simple array which is had to sort
@@ -35,4 +36,4 @@ void example() {
   }
 }
 
-#endif  // CODES_ALGORITHMS_INSERTIONSORT_H_
+#endif // CODES_ALGORITHMS_INSERTIONSORT_H_

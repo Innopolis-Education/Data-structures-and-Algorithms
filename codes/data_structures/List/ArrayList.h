@@ -1,7 +1,7 @@
 // Copyright 2022 Zener
 
-#ifndef DATA_STRUCTURES_AND_ALGORITHMS_ARRAYLIST_H
-#define DATA_STRUCTURES_AND_ALGORITHMS_ARRAYLIST_H
+#ifndef CODES_DATA_STRUCTURES_LIST_ARRAYLIST_H_
+#define CODES_DATA_STRUCTURES_LIST_ARRAYLIST_H_
 
 #include "ListInterface.h"
 #include <iostream>
@@ -68,4 +68,4 @@ public:
   }
 };
 
-#endif
+#endif // CODES_DATA_STRUCTURES_LIST_ARRAYLIST_H_

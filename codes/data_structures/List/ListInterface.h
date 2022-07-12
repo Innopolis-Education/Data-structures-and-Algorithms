@@ -1,7 +1,7 @@
 // Copyright 2022 Zener
 
-#ifndef DATA_STRUCTURES_AND_ALGORITHMS_LISTINTERFACE_H
-#define DATA_STRUCTURES_AND_ALGORITHMS_LISTINTERFACE_H
+#ifndef CODES_DATA_STRUCTURES_LIST_LISTINTERFACE_H_
+#define CODES_DATA_STRUCTURES_LIST_LISTINTERFACE_H_
 
 template <typename T> class ListInterface {
 public:
@@ -41,4 +41,4 @@ public:
   virtual T remove(int i) = 0;
 };
 
-#endif
+#endif // CODES_DATA_STRUCTURES_LIST_LISTINTERFACE_H_
