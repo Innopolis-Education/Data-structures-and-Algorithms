@@ -1,5 +1,3 @@
 // Copyright 2022 Zener
 
-int main() {
-    return 0;
-}
+int main() { return 0; }
