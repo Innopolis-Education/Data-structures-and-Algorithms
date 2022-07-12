@@ -1,7 +1,7 @@
-#include <iostream>
-#include "ArrayList.h"
+// Copyright 2022 Zener
 
-using namespace std;
+#include "ArrayList.h"
+#include <iostream>
 
 void example() {
     ArrayList<int> list(10);

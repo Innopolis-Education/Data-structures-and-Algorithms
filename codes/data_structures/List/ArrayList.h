@@ -1,14 +1,18 @@
+// Copyright 2022 Zener
+
 #ifndef DATA_STRUCTURES_AND_ALGORITHMS_ARRAYLIST_H
 #define DATA_STRUCTURES_AND_ALGORITHMS_ARRAYLIST_H
 
-#include <iostream>
 #include "ListInterface.h"
+#include <iostream>
 
 
-template <typename T>
+template<typename T>
 class ArrayList : public ListInterface<T> {
     int size_arr = 0;
-    T* array;
+    T *array;
+
+
 public:
     int CAPACITY = 16;
 
@@ -61,7 +65,7 @@ public:
 
         T removed = array[i];
 
-        while (i < size_arr-1) { array[i++] = array[i+1]; }
+        while (i < size_arr - 1) { array[i++] = array[i + 1]; }
         array[i] = (T) NULL;
 
         size_arr--;

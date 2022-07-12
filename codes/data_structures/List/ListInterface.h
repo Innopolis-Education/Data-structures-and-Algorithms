@@ -1,8 +1,10 @@
+// Copyright 2022 Zener
+
 #ifndef DATA_STRUCTURES_AND_ALGORITHMS_LISTINTERFACE_H
 #define DATA_STRUCTURES_AND_ALGORITHMS_LISTINTERFACE_H
 
 
-template <typename T>
+template<typename T>
 class ListInterface {
 public:
     /// Return size of the list

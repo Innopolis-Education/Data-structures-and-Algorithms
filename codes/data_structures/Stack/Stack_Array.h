@@ -15,7 +15,7 @@ class StackArray : StackInterface<E> {
     int CAPACITY = 16;
 
 
-public:
+    public:
     /// Default constructor
     StackArray() {
         this(CAPACITY);
