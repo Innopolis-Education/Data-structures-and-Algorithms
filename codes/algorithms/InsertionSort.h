@@ -31,7 +31,7 @@ void example() {
 
     insertion_sort(arr, size);
 
-    for (int x: arr) {
+    for (int x : arr) {
         std::cout << x << " ";
     }
 }
