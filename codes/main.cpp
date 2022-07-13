@@ -1,10 +1,3 @@
-#include <iostream>
+// Copyright 2022 Zener
 
-using namespace std;
-
-void example();
-
-int main() {
-    example();
-    return 0;
-}
+int main() { return 0; }

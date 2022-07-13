@@ -1,19 +1,19 @@
-#include <iostream>
-#include "ArrayList.h"
+// Copyright 2022 Zener
 
-using namespace std;
+#include "ArrayList.h"
+#include <iostream>
 
 void example() {
     ArrayList<int> list(10);
 
-    cout << list.isEmpty() << "\n";
+    std::cout << list.isEmpty() << "\n";
 
     list.add(0, 1);
-    cout << list.size() << "\n";
+    std::cout << list.size() << "\n";
 
-    cout << list.isEmpty() << "\n";
+    std::cout << list.isEmpty() << "\n";
 
-    cout << list.get(0) << "\n";
+    std::cout << list.get(0) << "\n";
 
-    cout << list.remove(0) << endl;
+    std::cout << list.remove(0) << std::endl;
 }

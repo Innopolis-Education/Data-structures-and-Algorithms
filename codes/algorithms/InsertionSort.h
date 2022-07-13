@@ -1,22 +1,24 @@
-#ifndef DATA_STRUCTURES_AND_ALGORITHMS_INSERTIONSORT_H
-#define DATA_STRUCTURES_AND_ALGORITHMS_INSERTIONSORT_H
+// Copyright 2022 Zener
+
+#ifndef CODES_ALGORITHMS_INSERTIONSORT_H_
+#define CODES_ALGORITHMS_INSERTIONSORT_H_
 
 #include <iostream>
-
-using namespace std;
+#include <utility>
 
 /// Implementation of insertion sort
 /// @param array a simple array which is had to sort
 /// @param size a size of the array
-/// @time_complexity best case - O(n)\n average case - O(n^2)\n worst case - O(n^2)
+/// @time_complexity best case - O(n)\n average case - O(n^2)\n worst case -
+/// O(n^2)
 /// @space_complexity 1 (only 2 variables)
-void insertion_sort(int* array, int size) {
+void insertion_sort(int *array, int size) {
     for (int i = 1; i < size; i++) {
         int key = array[i];
-        int j = i-1;
+        int j = i - 1;
 
         while (j >= 0 && key < array[j]) {
-            swap(array[j], array[j+1]);
+            std::swap(array[j], array[j + 1]);
             j--;
         }
     }
@@ -30,8 +32,8 @@ void example() {
     insertion_sort(arr, size);
 
     for (int x : arr) {
-        cout << x << " ";
+        std::cout << x << " ";
     }
 }
 
-#endif //DATA_STRUCTURES_AND_ALGORITHMS_INSERTIONSORT_H
+#endif  // CODES_ALGORITHMS_INSERTIONSORT_H_

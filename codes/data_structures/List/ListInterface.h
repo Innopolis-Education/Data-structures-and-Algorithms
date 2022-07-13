@@ -1,10 +1,11 @@
-#ifndef DATA_STRUCTURES_AND_ALGORITHMS_LISTINTERFACE_H
-#define DATA_STRUCTURES_AND_ALGORITHMS_LISTINTERFACE_H
+// Copyright 2022 Zener
 
+#ifndef CODES_DATA_STRUCTURES_LIST_LISTINTERFACE_H_
+#define CODES_DATA_STRUCTURES_LIST_LISTINTERFACE_H_
 
-template <typename T>
+template<typename T>
 class ListInterface {
-public:
+ public:
     /// Return size of the list
     /// \return the size of the list
     /// \time_complexity O(1) for all
@@ -31,15 +32,18 @@ public:
     /// add new value to any place
     /// \param i index of the element the list has to store
     /// \param t value of the element the list has to store
-    /// \time_complexity best case - O(1), average case - O(n), worst case - O(n)
+    /// \time_complexity best case - O(1),
+    ///                  average case - O(n),
+    ///                  worst case - O(n)
     virtual void add(int i, T t) = 0;
 
     /// remove the element from the list
     /// \param i index of the element which has to be removed
     /// \return value of the removed element
-    /// \time_complexity best case - O(1), average case - O(n), worst case - O(n)
+    /// \time_complexity best case - O(1),
+    ///                  average case - O(n),
+    ///                  worst case - O(n)
     virtual T remove(int i) = 0;
 };
 
-
-#endif
+#endif  // CODES_DATA_STRUCTURES_LIST_LISTINTERFACE_H_

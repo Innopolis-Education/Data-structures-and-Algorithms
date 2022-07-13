@@ -1,32 +1,27 @@
-#ifndef DATA_STRUCTURES_AND_ALGORITHMS_ARRAYLIST_H
-#define DATA_STRUCTURES_AND_ALGORITHMS_ARRAYLIST_H
+// Copyright 2022 Zener
+
+#ifndef CODES_DATA_STRUCTURES_LIST_ARRAYLIST_H_
+#define CODES_DATA_STRUCTURES_LIST_ARRAYLIST_H_
 
 #include <iostream>
+
 #include "ListInterface.h"
 
-
-template <typename T>
+template<typename T>
 class ArrayList : public ListInterface<T> {
     int size_arr = 0;
-    T* array;
-public:
+    T *array;
+
+ public:
     int CAPACITY = 16;
 
-    ArrayList() {
-        this(CAPACITY);
-    }
+    ArrayList() { this(CAPACITY); }
 
-    explicit ArrayList(int capacity) {
-        array = new T[capacity];
-    }
+    explicit ArrayList(int capacity) { array = new T[capacity]; }
 
-    int size() {
-        return size_arr;
-    }
+    int size() { return size_arr; }
 
-    bool isEmpty() {
-        return size_arr == 0;
-    }
+    bool isEmpty() { return size_arr == 0; }
 
     T get(int i) {
         if (i >= size_arr) return (T) NULL;
@@ -61,7 +56,9 @@ public:
 
         T removed = array[i];
 
-        while (i < size_arr-1) { array[i++] = array[i+1]; }
+        while (i < size_arr - 1) {
+            array[i++] = array[i + 1];
+        }
         array[i] = (T) NULL;
 
         size_arr--;
@@ -69,5 +66,4 @@ public:
     }
 };
 
-
-#endif
+#endif  // CODES_DATA_STRUCTURES_LIST_ARRAYLIST_H_
