@@ -34,4 +34,4 @@ template <typename E> class StackInterface {
   virtual E pop() = 0;
 };
 
-#endif  // CODES_DATA_STRUCTURES_STACK_STACK_INTERFACE_H_
+#endif // CODES_DATA_STRUCTURES_STACK_STACK_INTERFACE_H_

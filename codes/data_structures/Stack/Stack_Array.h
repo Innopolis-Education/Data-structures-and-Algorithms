@@ -12,8 +12,7 @@ template <typename E> class StackArray : StackInterface<E> {
   int top_element = -1;
   E *array;
   int CAPACITY = 16;
-
-public:
+  public:
   /// Default constructor
   StackArray() { this(CAPACITY); }
 
@@ -42,4 +41,4 @@ public:
   }
 };
 
-#endif  // CODES_DATA_STRUCTURES_STACK_STACK_ARRAY_H_
+#endif // CODES_DATA_STRUCTURES_STACK_STACK_ARRAY_H_

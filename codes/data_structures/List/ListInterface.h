@@ -4,7 +4,7 @@
 #define CODES_DATA_STRUCTURES_LIST_LISTINTERFACE_H_
 
 template <typename T> class ListInterface {
-public:
+  public:
   /// Return size of the list
   /// \return the size of the list
   /// \time_complexity O(1) for all
@@ -41,4 +41,4 @@ public:
   virtual T remove(int i) = 0;
 };
 
-#endif // CODES_DATA_STRUCTURES_LIST_LISTINTERFACE_H_
+#endif  // CODES_DATA_STRUCTURES_LIST_LISTINTERFACE_H_

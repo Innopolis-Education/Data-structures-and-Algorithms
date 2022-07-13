@@ -9,8 +9,7 @@
 template <typename T> class ArrayList : public ListInterface<T> {
   int size_arr = 0;
   T *array;
-
-public:
+  public:
   int CAPACITY = 16;
 
   ArrayList() { this(CAPACITY); }
@@ -68,4 +67,4 @@ public:
   }
 };
 
-#endif // CODES_DATA_STRUCTURES_LIST_ARRAYLIST_H_
+#endif  // CODES_DATA_STRUCTURES_LIST_ARRAYLIST_H_

@@ -36,4 +36,4 @@ void example() {
   }
 }
 
-#endif // CODES_ALGORITHMS_INSERTIONSORT_H_
+#endif  // CODES_ALGORITHMS_INSERTIONSORT_H_
