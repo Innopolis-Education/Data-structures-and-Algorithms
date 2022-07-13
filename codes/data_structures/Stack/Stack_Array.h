@@ -5,14 +5,16 @@
 #ifndef CODES_DATA_STRUCTURES_STACK_STACK_ARRAY_H_
 #define CODES_DATA_STRUCTURES_STACK_STACK_ARRAY_H_
 
-#include "Stack_Interface.h"
 #include <iostream>
+
+#include "Stack_Interface.h"
 
 template <typename E> class StackArray : StackInterface<E> {
   int top_element = -1;
   E *array;
   int CAPACITY = 16;
-  public:
+
+ public:
   /// Default constructor
   StackArray() { this(CAPACITY); }
 
@@ -25,8 +27,7 @@ template <typename E> class StackArray : StackInterface<E> {
   bool isEmpty() { return top_element == -1; }
 
   E top() {
-    if (isEmpty())
-      return (E)NULL;
+    if (isEmpty()) return (E)NULL;
 
     return array[top_element];
   }
@@ -34,11 +35,10 @@ template <typename E> class StackArray : StackInterface<E> {
   void push(E element) { array[++top_element] = element; }
 
   E pop() {
-    if (isEmpty())
-      return (E)NULL;
+    if (isEmpty()) return (E)NULL;
 
     return array[top_element--];
   }
 };
 
-#endif // CODES_DATA_STRUCTURES_STACK_STACK_ARRAY_H_
+#endif  // CODES_DATA_STRUCTURES_STACK_STACK_ARRAY_H_

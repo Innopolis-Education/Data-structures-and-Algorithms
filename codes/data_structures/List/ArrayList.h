@@ -3,13 +3,15 @@
 #ifndef CODES_DATA_STRUCTURES_LIST_ARRAYLIST_H_
 #define CODES_DATA_STRUCTURES_LIST_ARRAYLIST_H_
 
-#include "ListInterface.h"
 #include <iostream>
+
+#include "ListInterface.h"
 
 template <typename T> class ArrayList : public ListInterface<T> {
   int size_arr = 0;
   T *array;
-  public:
+
+ public:
   int CAPACITY = 16;
 
   ArrayList() { this(CAPACITY); }
@@ -21,15 +23,13 @@ template <typename T> class ArrayList : public ListInterface<T> {
   bool isEmpty() { return size_arr == 0; }
 
   T get(int i) {
-    if (i >= size_arr)
-      return (T)NULL;
+    if (i >= size_arr) return (T)NULL;
 
     return array[i];
   }
 
   T set(int i, T t) {
-    if (i >= size_arr)
-      return (T)NULL;
+    if (i >= size_arr) return (T)NULL;
 
     T removed = array[i];
     array[i] = t;
@@ -40,8 +40,7 @@ template <typename T> class ArrayList : public ListInterface<T> {
   void add(int i, T t) {
     size_arr++;
 
-    if (i >= size_arr)
-      return;
+    if (i >= size_arr) return;
     T temp;
 
     while (i < size_arr) {
@@ -52,8 +51,7 @@ template <typename T> class ArrayList : public ListInterface<T> {
   }
 
   T remove(int i) {
-    if (i >= size_arr)
-      return (T)NULL;
+    if (i >= size_arr) return (T)NULL;
 
     T removed = array[i];
 
