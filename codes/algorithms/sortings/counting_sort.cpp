@@ -12,13 +12,13 @@ int *counting_sort(int *array, const int &size, const int &max) {
         temp[i] = 0;
 
     for (int i = 0; i < size; i++)
-        temp[array[i]-1]++;
+        temp[array[i] - 1]++;
 
     for (int i = 1; i < max; i++)
-        temp[i] += temp[i-1];
+        temp[i] += temp[i - 1];
 
-    for (int i = size-1; i >= 0; i--)
-        sorted[--temp[array[i]-1]] = array[i];
+    for (int i = size - 1; i >= 0; i--)
+        sorted[--temp[array[i] - 1]] = array[i];
 
     return sorted;
 }
